@@ -1,0 +1,101 @@
+<div class="column-layout group">
+  <igx-select type="border" placeholder="選択してください" value="test" class="user-input">
+    <igx-select-item value="Option">
+      Option
+    </igx-select-item>
+    <igx-select-item value="Option">
+      Option
+    </igx-select-item>
+    <igx-select-item value="Option">
+      Option
+    </igx-select-item>
+    <igx-select-item value="Option">
+      Option
+    </igx-select-item>
+    <igx-select-item value="Option">
+      Option
+    </igx-select-item>
+    <label igxLabel>テスト</label>
+  </igx-select>
+  <igx-list class="list">
+    <igx-list-item [isHeader]="false" class="list-item">
+      <span igxListThumbnail>
+        <igx-avatar icon="person" [roundShape]="true"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Title goes here</span>
+      <span igxListLineSubTitle>Subtitle...</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          build
+        </igx-icon>
+      </span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="person" [roundShape]="true"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Title goes here</span>
+      <span igxListLineSubTitle>Subtitle...</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          star
+        </igx-icon>
+      </span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="person" [roundShape]="true"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Title goes here</span>
+      <span igxListLineSubTitle>Subtitle...</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          star
+        </igx-icon>
+      </span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="person" [roundShape]="true"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Title goes here</span>
+      <span igxListLineSubTitle>Subtitle...</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          star
+        </igx-icon>
+      </span>
+    </igx-list-item>
+  </igx-list>
+  <igx-input-group type="border" class="user-input">
+    <input type="text" igxInput />
+    <label igxLabel>Label/Placeholder</label>
+  </igx-input-group>
+</div>
+<div class="column-layout group_1">
+  <div class="column-layout group_2">
+    <div class="row-layout group_3">
+      <igx-category-chart [dataSource]="financialBoxOfficeRevenue" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+      <igx-pie-chart [dataSource]="financialGlobalElectricityDemand" labelsPosition="bestFit" labelMemberPath="Label" valueMemberPath="Value" class="pie-chart"></igx-pie-chart>
+    </div>
+  </div>
+  <div class="column-layout group_2">
+    <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+      <igx-column header="employeeID" field="employeeID" dataType="number" [sortable]="true" title="employeeID"></igx-column>
+      <igx-column header="lastName" field="lastName" dataType="string" [sortable]="true" title="lastName"></igx-column>
+      <igx-column header="firstName" field="firstName" dataType="string" [sortable]="true" title="firstName"></igx-column>
+      <igx-column header="title" field="title" dataType="string" [sortable]="true" title="title"></igx-column>
+      <igx-column header="titleOfCourtesy" field="titleOfCourtesy" dataType="string" [sortable]="true" title="titleOfCourtesy"></igx-column>
+      <igx-column header="birthDate" field="birthDate" dataType="date" [sortable]="true" title="birthDate"></igx-column>
+      <igx-column header="hireDate" field="hireDate" dataType="date" [sortable]="true" title="hireDate"></igx-column>
+      <igx-column header="street" field="address.street" dataType="string" [sortable]="true" title="address.street"></igx-column>
+      <igx-column header="city" field="address.city" dataType="string" [sortable]="true" title="address.city"></igx-column>
+      <igx-column header="region" field="address.region" dataType="string" [sortable]="true" title="address.region"></igx-column>
+      <igx-column header="postalCode" field="address.postalCode" dataType="string" [sortable]="true" title="address.postalCode"></igx-column>
+      <igx-column header="country" field="address.country" dataType="string" [sortable]="true" title="address.country"></igx-column>
+      <igx-column header="phone" field="address.phone" dataType="string" [sortable]="true" title="address.phone"></igx-column>
+      <igx-column header="notes" field="notes" dataType="string" [sortable]="true" title="notes"></igx-column>
+      <igx-column header="avatarUrl" field="avatarUrl" dataType="string" [sortable]="true" title="avatarUrl"></igx-column>
+    </igx-grid>
+  </div>
+</div>
